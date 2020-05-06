@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+body {
+	margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3em;
+    width: 30em;
+    color: #333333;
+    border: 1px solid black;
+
+    }
+    
+th, td {
+	font-family: "Lucida Console", Courier, monospace;
+	padding: 5px;
+	text-align: left;
+	background-color: lightgreen;
+
+	}
+
+thead {
+	font-family: Impact, Charcoal, sans-serif;
+	padding: 10px;
+	text-align: right;
+	border: 1px solid black;
+
+}
+
+h1 {
+	font-family: "Lucida Console", Courier, monospace;
+	padding: 5px;
+	text-align: left;
+}
