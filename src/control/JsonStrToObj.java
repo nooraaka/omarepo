@@ -11,7 +11,7 @@ public class JsonStrToObj {
 	public JSONObject convert(HttpServletRequest request) {		
 		JSONObject jsonObject = null;
 		BufferedReader reader;
-		try {
+		try { 
 			reader = request.getReader();
 			StringBuffer strBuffer = new StringBuffer();
 			String line = reader.readLine();
