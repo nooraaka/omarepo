@@ -147,13 +147,12 @@ public class Dao {
 		}
 		return asiakas;
 	}
-	public boolean muutaAsiakas(Asiakas asiakas, int asiakas_id){
+	public boolean muutaAsiakas(Asiakas asiakas){
 		boolean paluuArvo=true;
 		sql="UPDATE asiakkaat SET etunimi=?, sukunimi=?, puhelin=?, sposti=? WHERE asiakas_id=?";						  
 		try {
 			con = yhdista();
 			stmtPrep=con.prepareStatement(sql); 
-			stmtPrep.setInt(1, asiakas_id);
 			stmtPrep.setString(2, asiakas.getEtunimi());
 			stmtPrep.setString(3, asiakas.getSukunimi());
 			stmtPrep.setString(4, asiakas.getPuhelin());
@@ -166,4 +165,5 @@ public class Dao {
 		}				
 		return paluuArvo;
 	}
+	
 }
